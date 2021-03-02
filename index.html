@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vector</title>
+	<link rel="stylesheet" type="text/css" href="es.css">
+	<script>
+		x=[];
+	</script>
+</head>
+<body>
+	<center>
+		<input type="number" placeholder="Valores" id="in">
+		<input type="button" value="Ingresar" onclick="ing();">
+		<br><br>
+		<button onclick="max();">Mostrar max</button>
+	</center>
+	<div id="div"></div>
+	<script>
+		function ing()
+		{
+			x[x.length]=document.getElementById("in").value;
+			console.log(x);
+			console.log(x.length);
+			document.getElementById("in").value="";
+			if(x.length>5)
+			{
+				alert("No se pueden ingresar más de 5 valores");
+				x.pop();
+				console.log(x);
+				console.log(x.length);
+			}
+		}
+
+		function max()
+		{
+			y=Math.max(...x);
+			document.getElementById("div").innerHTML=y;
+		}
+	</script>
+</body>
+</html>

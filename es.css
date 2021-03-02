@@ -1,0 +1,13 @@
+#div
+{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 50%;
+	top: 20%;
+	left: 25%;
+	background-color: #A8ABE7;
+	font-size: 50px;
+}
